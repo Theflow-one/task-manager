@@ -14,6 +14,7 @@ const pool = new Pool({
 // Express app  
 const app = express();  
 app.use(express.json());  
+app.use(cors());
 
 // API Routes  
 app.get('/tasks', async (req, res) => {  
